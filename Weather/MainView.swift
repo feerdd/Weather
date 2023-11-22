@@ -73,13 +73,17 @@ struct MainView: View {
                                 
                                
                             }
-                                if (place.weather == "Clear"){
+                            if (place.weather == "Clear")
+                            {
                                 HourlyView2()
                                         .padding(.top)
-                                   
                             }
                             
-                            
+                            if (place.weather == "Cloudy")
+                            {
+                                HourlyView2()
+                                        .padding(.top)
+                            }
                            
                         }
                         .padding(.bottom, 83)
@@ -126,7 +130,27 @@ struct MainView: View {
                         if (place.weather == "Sunny"){
                             LinearGradient(gradient: Gradient(colors: [Color.sun1, Color.sun2,Color.sun3]), startPoint: .topLeading, endPoint: .bottomLeading)
                         }
-                        
+                        if (place.weather == "Cloudy"){
+                            ZStack{
+                                LinearGradient(gradient: Gradient(colors: [Color.set3, Color.set2,Color.set1]), startPoint: .topLeading, endPoint: .bottomLeading)
+                                
+                                if self.colorScheme == .dark{
+                                    SpriteView(scene: Cloud2Scene(),
+                                               options: [.allowsTransparency])
+                                    .ignoresSafeArea()
+                                    
+                                   
+                                }
+                                else { SpriteView(scene: Cloud3Scene(),
+                                                  options: [.allowsTransparency])
+                                       .ignoresSafeArea()
+                                   
+                                }
+                            }
+                            
+                                    
+                            
+                        }
                     }.ignoresSafeArea()
                  
                 }

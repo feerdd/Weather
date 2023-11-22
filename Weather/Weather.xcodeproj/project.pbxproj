@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6038BCB2B04F96A0012CF76 /* RainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6038BCA2B04F96A0012CF76 /* RainView.swift */; };
 		F6038BCD2B04FA010012CF76 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6038BCC2B04FA010012CF76 /* Place.swift */; };
 		F6038BD02B04FC5E0012CF76 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6038BCF2B04FC5E0012CF76 /* PlaceViewModel.swift */; };
 		F608330F2B06D866002E4F73 /* RainLanding.sks in Resources */ = {isa = PBXBuildFile; fileRef = F608330E2B06D866002E4F73 /* RainLanding.sks */; };
 		F60833112B06DFC3002E4F73 /* Star.sks in Resources */ = {isa = PBXBuildFile; fileRef = F60833102B06DFC3002E4F73 /* Star.sks */; };
-		F60833132B06E305002E4F73 /* NightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60833122B06E305002E4F73 /* NightView.swift */; };
 		F60833202B06EB5A002E4F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F608331E2B06EB5A002E4F73 /* Assets.xcassets */; };
 		F61A855D2B0BD06C001E5908 /* Clouds.sks in Resources */ = {isa = PBXBuildFile; fileRef = F61A855C2B0BD06C001E5908 /* Clouds.sks */; };
 		F61A855F2B0BE7F3001E5908 /* Moon.sks in Resources */ = {isa = PBXBuildFile; fileRef = F61A855E2B0BE7F3001E5908 /* Moon.sks */; };
@@ -25,18 +23,17 @@
 		F656EB572B0CF3E700EE8415 /* Forecast2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F656EB562B0CF3E700EE8415 /* Forecast2.swift */; };
 		F656EB592B0CF47F00EE8415 /* HourelyView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F656EB582B0CF47F00EE8415 /* HourelyView2.swift */; };
 		F665E79C2B0B7CE900C7A600 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665E79B2B0B7CE900C7A600 /* MainView.swift */; };
-		F6ECEA942B06691200B4FF0E /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = F6ECEA922B06691200B4FF0E /* Rain.sks */; };
+		F667226D2B0E1F2A00854821 /* Cloud2.sks in Resources */ = {isa = PBXBuildFile; fileRef = F667226C2B0E1F2A00854821 /* Cloud2.sks */; };
+		F66722732B0E37E200854821 /* Clouds3.sks in Resources */ = {isa = PBXBuildFile; fileRef = F66722722B0E37E200854821 /* Clouds3.sks */; };
 		F6F3A2D62B037E1B00ACB8D3 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */; };
 		F6F3A2DD2B037E1C00ACB8D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F6038BCA2B04F96A0012CF76 /* RainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainView.swift; sourceTree = "<group>"; };
 		F6038BCC2B04FA010012CF76 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		F6038BCF2B04FC5E0012CF76 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		F608330E2B06D866002E4F73 /* RainLanding.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainLanding.sks; sourceTree = "<group>"; };
 		F60833102B06DFC3002E4F73 /* Star.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Star.sks; sourceTree = "<group>"; };
-		F60833122B06E305002E4F73 /* NightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightView.swift; sourceTree = "<group>"; };
 		F608331E2B06EB5A002E4F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F61A855C2B0BD06C001E5908 /* Clouds.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Clouds.sks; sourceTree = "<group>"; };
 		F61A855E2B0BE7F3001E5908 /* Moon.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Moon.sks; sourceTree = "<group>"; };
@@ -49,7 +46,8 @@
 		F656EB562B0CF3E700EE8415 /* Forecast2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast2.swift; sourceTree = "<group>"; };
 		F656EB582B0CF47F00EE8415 /* HourelyView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourelyView2.swift; sourceTree = "<group>"; };
 		F665E79B2B0B7CE900C7A600 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		F6ECEA922B06691200B4FF0E /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
+		F667226C2B0E1F2A00854821 /* Cloud2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cloud2.sks; sourceTree = "<group>"; };
+		F66722722B0E37E200854821 /* Clouds3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Clouds3.sks; sourceTree = "<group>"; };
 		F6F3A2D22B037E1B00ACB8D3 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -66,21 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6038BCE2B04FC200012CF76 /* Place */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Place;
-			sourceTree = "<group>";
-		};
-		F608331C2B06E7E1002E4F73 /* Night */ = {
-			isa = PBXGroup;
-			children = (
-				F60833122B06E305002E4F73 /* NightView.swift */,
-			);
-			path = Night;
-			sourceTree = "<group>";
-		};
 		F64A116E2B0CC7FC00E20871 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,21 +84,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		F64B332F2B0616AF00B55AA9 /* Rain */ = {
-			isa = PBXGroup;
-			children = (
-				F6038BCA2B04F96A0012CF76 /* RainView.swift */,
-			);
-			path = Rain;
-			sourceTree = "<group>";
-		};
 		F6C7DE322B0C1D67001F850F /* Particles */ = {
 			isa = PBXGroup;
 			children = (
+				F667226C2B0E1F2A00854821 /* Cloud2.sks */,
 				F61A855E2B0BE7F3001E5908 /* Moon.sks */,
 				F64AC5AD2B0DE5FD0040A944 /* Sun.sks */,
+				F66722722B0E37E200854821 /* Clouds3.sks */,
 				F60833102B06DFC3002E4F73 /* Star.sks */,
-				F6ECEA922B06691200B4FF0E /* Rain.sks */,
 				F608330E2B06D866002E4F73 /* RainLanding.sks */,
 				F61A855C2B0BD06C001E5908 /* Clouds.sks */,
 			);
@@ -134,9 +110,6 @@
 				F64A116E2B0CC7FC00E20871 /* Model */,
 				F6F3A2D42B037E1B00ACB8D3 /* Weather */,
 				F6C7DE322B0C1D67001F850F /* Particles */,
-				F608331C2B06E7E1002E4F73 /* Night */,
-				F64B332F2B0616AF00B55AA9 /* Rain */,
-				F6038BCE2B04FC200012CF76 /* Place */,
 				F6F3A2D32B037E1B00ACB8D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -225,9 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F608330F2B06D866002E4F73 /* RainLanding.sks in Resources */,
+				F66722732B0E37E200854821 /* Clouds3.sks in Resources */,
 				F61A855D2B0BD06C001E5908 /* Clouds.sks in Resources */,
 				F60833112B06DFC3002E4F73 /* Star.sks in Resources */,
-				F6ECEA942B06691200B4FF0E /* Rain.sks in Resources */,
+				F667226D2B0E1F2A00854821 /* Cloud2.sks in Resources */,
 				F64AC5AF2B0DE5FD0040A944 /* Sun.sks in Resources */,
 				F60833202B06EB5A002E4F73 /* Assets.xcassets in Resources */,
 				F6F3A2DD2B037E1C00ACB8D3 /* Preview Assets.xcassets in Resources */,
@@ -242,8 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6038BCB2B04F96A0012CF76 /* RainView.swift in Sources */,
-				F60833132B06E305002E4F73 /* NightView.swift in Sources */,
 				F6038BCD2B04FA010012CF76 /* Place.swift in Sources */,
 				F656EB572B0CF3E700EE8415 /* Forecast2.swift in Sources */,
 				F665E79C2B0B7CE900C7A600 /* MainView.swift in Sources */,

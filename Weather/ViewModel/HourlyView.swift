@@ -58,7 +58,7 @@ struct HourlyView: View {
                 }
             }
             .padding(10)
-            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+            .background(.ultraThinMaterial , in: RoundedRectangle(cornerRadius: 16))
             .padding(.horizontal)
             
             VStack(alignment: .leading, spacing: 10) {
@@ -78,55 +78,58 @@ struct HourlyView: View {
                 ForEach(forecast) {cast in
                     
                     
-                        HStack(spacing: 15) {
+                    HStack(spacing: 15) {
+                        
+                        Text(cast.day)
+                            .font(.title3.bold())
+                            .foregroundStyle(.white)
+                            .frame(width: 60, alignment: .leading)
+                            .accessibilityLabel(cast.day)
+                        
+                        
+                        Image(systemName: cast.image)
+                            .font(.title3)
+                            .symbolVariant(.fill)
+                            .symbolRenderingMode(.palette)
+                            .foregroundStyle(.white,.cyan)
+                            .frame(width: 30)
+                        
+                        Text("\(Int(cast.temperature - 8))°")
+                            .font(.title3.bold())
+                            .foregroundStyle(.secondary)
+                            .foregroundStyle(.white)
+                            .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                            .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                        
+                        
+                        
+                        //Progress Bar...
+                        ZStack(alignment: .leading) {
                             
-                            Text(cast.day)
-                                .font(.title3.bold())
+                            Capsule()
+                                .fill(.tertiary)
                                 .foregroundStyle(.white)
-                                .frame(width: 60, alignment: .leading)
-                                .accessibilityLabel(cast.day)
                             
-                            
-                            Image(systemName: cast.image)
-                                .font(.title3)
-                                .symbolVariant(.fill)
-                                .symbolRenderingMode(.palette)
-                                .foregroundStyle(.white,.cyan)
-                                .frame(width: 30)
-                            
-                          
-                            
-                            
-                            //Progress Bar...
-                            ZStack(alignment: .leading) {
+                            GeometryReader {proxy in
                                 
                                 Capsule()
-                                    .fill(.tertiary)
-                                    .foregroundStyle(.white)
-                                
-                                GeometryReader {proxy in
-                                    
-                                    Capsule()
-                                        .fill(.linearGradient(.init(colors: [.blue, .green]), startPoint: .leading, endPoint: .trailing))
-                                        .frame(width: (cast.temperature) * 2)
-                                    
-                                }
+                                    .fill(.linearGradient(.init(colors: [.blue, .green]), startPoint: .leading, endPoint: .trailing))
+                                    .frame(width: (cast.temperature) * 2)
                                 
                             }
-                            .frame(height: 4)
-                            Text("\(Int(cast.temperature - 8))°")
-                                .font(.title3.bold())
-                                .foregroundStyle(.secondary)
-                                .foregroundStyle(.white)
-                                .accessibilityLabel("\(Int(cast.temperature - 8))°")
-                                .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                            
                         }
+                        .frame(height: 4)
+                        Text("\(Int(cast.temperature))°")
+                            .font(.title3.bold())
+                            .foregroundStyle(.white)
+                    }
                     }
                 }
             }.padding()
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal)
-          
+                
         }
     }
 }

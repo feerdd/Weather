@@ -109,7 +109,11 @@ struct HourlyView2: View {
                                 
                             }
                             
-                            
+                            Text("\(Int(cast.temperature - 8))°")
+                                .font(.title3.bold())
+                                .foregroundStyle(.secondary)
+                                .foregroundStyle(.white)
+                                .accessibilityLabel("\(Int(cast.temperature - 8))°")
                            
                             
                             //Progress Bar...
@@ -129,12 +133,10 @@ struct HourlyView2: View {
                                 
                             }
                             .frame(height: 4)
-                            Text("\(Int(cast.temperature - 8))°")
+                           
+                            Text("\(Int(cast.temperature))°")
                                 .font(.title3.bold())
-                                .foregroundStyle(.secondary)
                                 .foregroundStyle(.white)
-                                .accessibilityLabel("\(Int(cast.temperature - 8))°")
-                            
                         }
                     }
                 }

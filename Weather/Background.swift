@@ -17,10 +17,10 @@ class RainScene: SKScene{
         //adding backgroung
         backgroundColor = .clear
         
-        size = UIScreen.main.bounds.size
+       
         scaleMode = .resizeFill
         
-        //need anchor to make the rain appear
+        //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.5, y: 1)
         
     //need an Emitter node cause rain is a particles animation and adding to scene
@@ -80,6 +80,53 @@ class CloudScene: SKScene{
        
     }
 }
+
+//The SKScene contains the node of Cloud
+class Cloud2Scene: SKScene{
+    
+    //add the function to start the animation
+    override func sceneDidLoad() {
+        
+        //adding backgroung
+        backgroundColor = .clear
+        
+        size = UIScreen.main.bounds.size
+        scaleMode = .resizeFill
+        
+        //need anchor to make the rain appear
+        anchorPoint = CGPoint(x: 0.3, y: 0.91)
+        
+    //need an Emitter node cause clouds is a particles animation and adding to scene
+    let cloud2Emitter = SKEmitterNode(fileNamed: "Cloud2.sks")!
+    addChild(cloud2Emitter)
+        
+       
+    }
+}
+
+//The SKScene contains the node of Cloud
+class Cloud3Scene: SKScene{
+    
+    //add the function to start the animation
+    override func sceneDidLoad() {
+        
+        //adding backgroung
+        backgroundColor = .clear
+        
+        size = UIScreen.main.bounds.size
+        scaleMode = .resizeFill
+        
+        //need anchor to make the rain appear
+        anchorPoint = CGPoint(x: 0.3, y: 0.91)
+        
+    //need an Emitter node cause clouds is a particles animation and adding to scene
+    let cloud3Emitter = SKEmitterNode(fileNamed: "Clouds3.sks")!
+    addChild(cloud3Emitter)
+        
+       
+    }
+}
+
 
 //The SKScene contains the node of the moon
 class MoonScene: SKScene{
