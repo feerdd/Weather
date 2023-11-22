@@ -25,6 +25,7 @@
 		F665E79C2B0B7CE900C7A600 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F665E79B2B0B7CE900C7A600 /* MainView.swift */; };
 		F667226D2B0E1F2A00854821 /* Cloud2.sks in Resources */ = {isa = PBXBuildFile; fileRef = F667226C2B0E1F2A00854821 /* Cloud2.sks */; };
 		F66722732B0E37E200854821 /* Clouds3.sks in Resources */ = {isa = PBXBuildFile; fileRef = F66722722B0E37E200854821 /* Clouds3.sks */; };
+		F6A0E7002B0E44CE00095639 /* Rain.sks in Resources */ = {isa = PBXBuildFile; fileRef = F6A0E6FF2B0E44CE00095639 /* Rain.sks */; };
 		F6F3A2D62B037E1B00ACB8D3 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */; };
 		F6F3A2DD2B037E1C00ACB8D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		F665E79B2B0B7CE900C7A600 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F667226C2B0E1F2A00854821 /* Cloud2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cloud2.sks; sourceTree = "<group>"; };
 		F66722722B0E37E200854821 /* Clouds3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Clouds3.sks; sourceTree = "<group>"; };
+		F6A0E6FF2B0E44CE00095639 /* Rain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Rain.sks; sourceTree = "<group>"; };
 		F6F3A2D22B037E1B00ACB8D3 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
 		F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				F60833102B06DFC3002E4F73 /* Star.sks */,
 				F608330E2B06D866002E4F73 /* RainLanding.sks */,
 				F61A855C2B0BD06C001E5908 /* Clouds.sks */,
+				F6A0E6FF2B0E44CE00095639 /* Rain.sks */,
 			);
 			path = Particles;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				F608330F2B06D866002E4F73 /* RainLanding.sks in Resources */,
 				F66722732B0E37E200854821 /* Clouds3.sks in Resources */,
 				F61A855D2B0BD06C001E5908 /* Clouds.sks in Resources */,
+				F6A0E7002B0E44CE00095639 /* Rain.sks in Resources */,
 				F60833112B06DFC3002E4F73 /* Star.sks in Resources */,
 				F667226D2B0E1F2A00854821 /* Cloud2.sks in Resources */,
 				F64AC5AF2B0DE5FD0040A944 /* Sun.sks in Resources */,
