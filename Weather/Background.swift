@@ -71,7 +71,7 @@ class CloudScene: SKScene{
         scaleMode = .resizeFill
         
         //need anchor to make the rain appear
-        anchorPoint = CGPoint(x: 0.3, y: 0.91)
+        anchorPoint = CGPoint(x: 0.1, y: 0.91)
         
     //need an Emitter node cause clouds is a particles animation and adding to scene
     let cloudsEmitter = SKEmitterNode(fileNamed: "Clouds.sks")!
