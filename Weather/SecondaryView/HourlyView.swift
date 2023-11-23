@@ -11,8 +11,6 @@ import SpriteKit
 struct HourlyView: View {
     var body: some View {
         
-        
-        
         VStack{
             VStack{
                 
@@ -22,7 +20,7 @@ struct HourlyView: View {
                     .padding(.leading, -17.0)
                     .shadow(radius: 2)
                     .padding(.horizontal)
-                    .accessibilityLabel("Cloudy conditions expected around 16:00 and 17:00")
+                    .accessibilityLabel("Rain conditions expected around 16:00 and 17:00")
                     
                 
                 Divider()
@@ -45,6 +43,7 @@ struct HourlyView: View {
                                 Image(systemName:cast.image)
                                     .foregroundStyle(.white,.cyan)
                                     .padding(.vertical, 3)
+                                    
                                 
                                 Text("\(Int(cast.temperature ))°")
                                     .font(.system(size: 20))
@@ -52,7 +51,8 @@ struct HourlyView: View {
                                     .foregroundColor(Color.white)
                                    .accessibilityLabel("\(Int(cast.temperature))°")
                                 
-                            }.padding(.trailing, 14)
+                            }.accessibilityElement(children: .combine)
+                            .padding(.trailing, 14)
                         }
                     }
                 }
@@ -124,6 +124,7 @@ struct HourlyView: View {
                             .font(.title3.bold())
                             .foregroundStyle(.white)
                     }
+                    .accessibilityElement(children: .combine)
                     }
                 }
             }.padding()

@@ -54,7 +54,8 @@ struct HourlyView3: View {
                                     .foregroundColor(Color.white)
                                     .accessibilityLabel("\(Int(cast.temperature))°")
                                 
-                            }.padding(.trailing, 14)
+                            }.accessibilityElement(children: .combine)
+                            .padding(.trailing, 14)
                         }
                     }
                 }
@@ -123,7 +124,7 @@ struct HourlyView3: View {
                             Text("\(Int(cast.temperature))°")
                                 .font(.title3.bold())
                                 .foregroundStyle(.white)
-                        }
+                        }.accessibilityElement(children: .combine)
                     }
                 }
             }.padding()

@@ -23,7 +23,7 @@ struct HourlyView2: View {
                     .padding(.leading, -17.0)
                     .shadow(radius: 2)
                     .padding(.horizontal)
-                    .accessibilityLabel("Cloudy conditions expected around 16:00 and 17:00")
+                    .accessibilityLabel("Clear conditions expected around 16:00 and 17:00")
                 
                 Divider()
                     .padding(.bottom, 8)
@@ -59,9 +59,10 @@ struct HourlyView2: View {
                                     .font(.system(size: 20))
                                     .fontWeight(.medium)
                                     .foregroundColor(Color.white)
-                                    .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                                    .accessibilityLabel("\(Int(cast.temperature))°")
                                 
-                            }.padding(.trailing, 14)
+                            }.accessibilityElement(children: .combine)
+                            .padding(.trailing, 14)
                         }
                     }
                 }
@@ -137,7 +138,7 @@ struct HourlyView2: View {
                             Text("\(Int(cast.temperature))°")
                                 .font(.title3.bold())
                                 .foregroundStyle(.white)
-                        }
+                        }.accessibilityElement(children: .combine)
                     }
                 }
             }.padding()
