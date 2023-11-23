@@ -20,7 +20,7 @@ class RainScene: SKScene{
        
         scaleMode = .resizeFill
         
-        //need anchor to make the clouds appear
+        //need anchor to make the rain appear
         anchorPoint = CGPoint(x: 0.5, y: 1)
         
     //need an Emitter node cause rain is a particles animation and adding to scene
@@ -52,7 +52,7 @@ class RainLandingScene: SKScene{
     let rainLandingEmitter = SKEmitterNode(fileNamed: "RainLanding.sks")!
     addChild(rainLandingEmitter)
         
-        //full width - frame
+        //full width - frame to fit the box
         rainLandingEmitter.particlePositionRange.dx = UIScreen.main.bounds.width - 70
     
     }
@@ -70,7 +70,7 @@ class CloudScene: SKScene{
         size = UIScreen.main.bounds.size
         scaleMode = .resizeFill
         
-        //need anchor to make the rain appear
+        //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.1, y: 0.91)
         
     //need an Emitter node cause clouds is a particles animation and adding to scene
@@ -93,7 +93,7 @@ class Cloud2Scene: SKScene{
         size = UIScreen.main.bounds.size
         scaleMode = .resizeFill
         
-        //need anchor to make the rain appear
+        //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.3, y: 0.91)
         
     //need an Emitter node cause clouds is a particles animation and adding to scene
@@ -116,7 +116,7 @@ class Cloud3Scene: SKScene{
         size = UIScreen.main.bounds.size
         scaleMode = .resizeFill
         
-        //need anchor to make the rain appear
+        //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.3, y: 0.91)
         
     //need an Emitter node cause clouds is a particles animation and adding to scene
@@ -168,7 +168,7 @@ class StarScene: SKScene{
         //need anchor to make the stars appear
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
-    //need an Emitter node cause star is a particles animation and adding to scene
+    //need an Emitter node cause stars is a particles animation and adding to scene
     let starEmitter = SKEmitterNode(fileNamed: "Star.sks")!
     addChild(starEmitter)
         
