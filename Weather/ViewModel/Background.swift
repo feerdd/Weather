@@ -46,7 +46,7 @@ class RainLandingScene: SKScene{
         scaleMode = .resizeFill
         
         //need anchor to make the rain appear
-        anchorPoint = CGPoint(x: 0.5, y: 0.645)
+        anchorPoint = CGPoint(x: 0.5, y: 0.64480)
         
     //need an Emitter node cause rain is a particles animation and adding to scene
     let rainLandingEmitter = SKEmitterNode(fileNamed: "RainLanding.sks")!
