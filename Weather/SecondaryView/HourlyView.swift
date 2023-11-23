@@ -31,26 +31,26 @@ struct HourlyView: View {
                 
                 ScrollView(.horizontal){
                     HStack{
-                        ForEach(1..<8)
+                        ForEach(hourly)
                         {
-                            place in
+                            cast in
                             VStack{
                                 
-                                Text("Now")
+                                Text(cast.hour)
                                     .font(.system(size: 14))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.white)
-                                    .accessibilityLabel("Now")
+                                    .accessibilityLabel(cast.hour)
                                 
-                                Image(systemName:"cloud.heavyrain.fill")
+                                Image(systemName:cast.image)
                                     .foregroundStyle(.white,.cyan)
                                     .padding(.vertical, 3)
                                 
-                                Text("5°")
+                                Text("\(Int(cast.temperature ))°")
                                     .font(.system(size: 20))
                                     .fontWeight(.medium)
                                     .foregroundColor(Color.white)
-                                    .accessibilityLabel("5°")
+                                   .accessibilityLabel("\(Int(cast.temperature))°")
                                 
                             }.padding(.trailing, 14)
                         }
@@ -99,7 +99,7 @@ struct HourlyView: View {
                             .foregroundStyle(.secondary)
                             .foregroundStyle(.white)
                             .accessibilityLabel("\(Int(cast.temperature - 8))°")
-                            .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                         
                         
                         
                         

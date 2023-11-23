@@ -18,6 +18,13 @@ struct DayForecast3: Identifiable {
     
 }
 
+struct HourForecast3: Identifiable{
+    var id = UUID().uuidString
+    var hour: String
+    var temperature: CGFloat
+    var image: String
+}
+
 var forecast3 = [
     
     DayForecast(day: "Today", temperature: 11, image: "cloud"),
@@ -28,5 +35,15 @@ var forecast3 = [
     DayForecast(day: "Fri", temperature: 13, image: "cloud"),
     DayForecast(day: "Sat", temperature: 12, image: "cloud"),
     DayForecast(day: "Sun", temperature: 10, image: "cloud"),
+
+]
+var hourly3 = [
+    HourForecast(hour: "16:00", temperature: 12, image: "cloud"),
+    HourForecast(hour: "17:00", temperature: 12, image: "cloud"),
+    HourForecast(hour: "18:00", temperature: 13, image: "cloud"),
+    HourForecast(hour: "19:00", temperature: 13, image: "cloud"),
+    HourForecast(hour: "20:00", temperature: 14, image: "cloud"),
+    HourForecast(hour: "21:00", temperature: 15, image: "cloud"),
+    HourForecast(hour: "22:00", temperature: 15, image: "cloud")
 
 ]

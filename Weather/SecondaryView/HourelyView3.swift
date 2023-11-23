@@ -31,16 +31,16 @@ struct HourlyView3: View {
                 
                 ScrollView(.horizontal){
                     HStack{
-                        ForEach(forecast3)
+                        ForEach(hourly3)
                         {
                             cast in
                             VStack{
                                 
-                                Text("Now")
+                                Text(cast.hour)
                                     .font(.system(size: 14))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.white)
-                                    .accessibilityLabel("Now")
+                                    .accessibilityLabel(cast.hour)
                                 
                                 Image(systemName: cast.image)
                                         .foregroundStyle(.white)
@@ -48,11 +48,11 @@ struct HourlyView3: View {
                                         .padding(.vertical, 3)
                                
                                 
-                                Text("\(Int(cast.temperature - 8))°")
+                                Text("\(Int(cast.temperature))°")
                                     .font(.system(size: 20))
                                     .fontWeight(.medium)
                                     .foregroundColor(Color.white)
-                                    .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                                    .accessibilityLabel("\(Int(cast.temperature))°")
                                 
                             }.padding(.trailing, 14)
                         }
