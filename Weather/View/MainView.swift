@@ -7,10 +7,18 @@
 
 import SwiftUI
 import SpriteKit
+import UIKit
+
 
 struct MainView: View {
+   
+    //adding Environment for add things just in light or dark mode
     @Environment(\.colorScheme) var colorScheme: ColorScheme
-    
+  
+    //found a way to change toolbar color, but not for change it according to the view
+    /*init(){
+       UIToolbar.appearance().barTintColor = .init(displayP3Red: 1, green: 1, blue: 1, alpha: 0)
+  }*/
     var viewModel =  PlaceViewModel()
     
     var body: some View {
@@ -81,7 +89,7 @@ struct MainView: View {
                             
                             if (place.weather == "Cloudy")
                             {
-                                HourlyView2()
+                                HourlyView3()
                                         .padding(.top)
                             }
                            
@@ -181,7 +189,9 @@ struct MainView: View {
                 
                
                
-            }.toolbarColorScheme(.dark, for: .bottomBar)  .toolbarBackground(.visible , for: .bottomBar)
+            }
+            
+            .toolbarColorScheme(.dark, for: .bottomBar)  .toolbarBackground(.visible , for: .bottomBar)
                 .background(Color.white)
             
             

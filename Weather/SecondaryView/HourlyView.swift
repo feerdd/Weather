@@ -16,7 +16,7 @@ struct HourlyView: View {
         VStack{
             VStack{
                 
-                Text("Cloudy conditions expected around 16:00 and 17:00")
+                Text("Rain conditions expected around 16:00 and 17:00")
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.leading)
                     .padding(.leading, -17.0)
@@ -58,7 +58,7 @@ struct HourlyView: View {
                 }
             }
             .padding(10)
-            .background(.ultraThinMaterial , in: RoundedRectangle(cornerRadius: 16))
+            .background(.ultraThinMaterial ,  in: RoundedRectangle(cornerRadius: 16))
             .padding(.horizontal)
             
             VStack(alignment: .leading, spacing: 10) {
@@ -133,32 +133,6 @@ struct HourlyView: View {
         }
     }
 }
-    /*
-     //The SKScene contains the node
-     class RainLandingScene: SKScene{
-     
-     //add the function to start the animation
-     override func sceneDidLoad() {
-     
-     //adding backgroung
-     backgroundColor = .clear
-     
-     size = UIScreen.main.bounds.size
-     scaleMode = .resizeFill
-     
-     //need anchor to make the rain appear
-     anchorPoint = CGPoint(x: 0.5, y: 0.589)
-     
-     //need an Emitter node cause rain is a particles animation and adding to scene
-     let rainLandingEmitter = SKEmitterNode(fileNamed: "RainLanding.sks")!
-     addChild(rainLandingEmitter)
-     
-     //full width - frame
-     rainLandingEmitter.particlePositionRange.dx = UIScreen.main.bounds.width - 70
-     
-     }
-     }*/
-    
     
     #Preview {
         HourlyView()

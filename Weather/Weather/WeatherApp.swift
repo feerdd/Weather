@@ -23,30 +23,3 @@ struct WeatherApp: App {
             
             
         
-//
-    
-             
-        
-    
-   /* .toolbar{
-    
-    ToolbarItemGroup(placement: .bottomBar){
-        Button(action: {
-            
-        }, label: {
-            Image(systemName: "map")
-                .foregroundColor(Color.white)
-            
-        })
-        
-        Button(action: {
-            
-        }, label: {
-            Image(systemName: "list.bullet")
-                .foregroundColor(Color.white)
-        })
-    }
-    
-    
-    
-}*/
