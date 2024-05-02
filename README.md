@@ -23,6 +23,10 @@ The primary goal of this project is to serve as a hands-on learning experience f
 - **Nodes and Particles**: Implemented to create various weather effects such as rain, sun, moon, stars, and clouds.
 - **Dark Mode**: Utilized to alternate between day and night modes based on the system settings.
 
+## Accessibility
+
+- **VoiceOver Integration**: The project includes built-in support for VoiceOver, ensuring accessibility for users with visual impairments. This feature enhances the usability of the app, allowing all users to navigate and interact with the interface effortlessly.
+
 ## Installation
 
 1. Clone the repository.
