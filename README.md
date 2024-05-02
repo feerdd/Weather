@@ -1,24 +1,25 @@
-# iOS Weather App UI 
-This project focuses on recreating the iOS Weather app's user interface using Xcode (Swift) with a specific emphasis on learning animation techniques. The UI includes animations such as rain, sun, moon, stars, and clouds. Additionally, some sunsets feature colors not present in the native app.
+# iOS Weather App UI Clone
+
+This project is a front-end codebase created to replicate the iOS Weather app interface, with a focus on learning animation techniques using Xcode (Swift). It includes animations such as rain, sun, moon, stars, and clouds. Additionally, some sunsets feature colors not found in the native app.
 
 ## Purpose
 
-The primary objective of this project is to serve as a learning platform for mastering animation techniques within Xcode and Swift development. By recreating the iOS Weather app interface, this project provides hands-on experience in implementing various animations, including rain, celestial bodies, and atmospheric effects.
+The primary goal of this project is to serve as a hands-on learning experience for mastering animation concepts within Xcode and Swift. By recreating the iOS Weather app interface, emphasis was placed on understanding and implementing various animation techniques to achieve visually appealing effects.
 
 ## Features
 
-- Faithful recreation of the iOS Weather app's user interface.
-- Animations implemented using SpriteKit, leveraging SKScene, nodes, and particles for dynamic visual effects.
-- Special rain effect designed to simulate raindrops hitting and splashing over informational boxes.
-- Integration of informational boxes displaying meteorological data within the user interface.
+- Recreated iOS Weather app UI screen with animations.
+- Animations implemented using SpriteKit, utilizing SKScene, nodes, and particles.
+- Rain effect designed to simulate raindrops hitting and splashing over informational boxes.
+- Informational boxes displaying weather data.
+- Day and night alternation based on dark mode settings.
 
 ## Technologies Used
 
-- **Xcode**: Integrated Development Environment (IDE) for iOS app development.
-- **Swift**: Programming language used for implementing app logic and animations.
-- **SpriteKit**: Framework utilized for creating and managing animations efficiently.
-- **SKScene and Nodes**: Components utilized for organizing and controlling the visual elements of the animations.
-- **Particles**: Used to enhance animations with dynamic and realistic effects, such as rain and atmospheric phenomena.
+- **SpriteKit**: Utilized for creating and managing animations efficiently.
+- **SKScene**: Used to organize and manage the visual elements of the animations.
+- **Nodes and Particles**: Implemented to create various weather effects such as rain, sun, moon, stars, and clouds.
+- **Dark Mode**: Utilized to alternate between day and night modes based on the system settings.
 
 ## Installation
 
@@ -28,12 +29,16 @@ The primary objective of this project is to serve as a learning platform for mas
 
 ## Usage
 
-Upon launching the app, users will experience a faithful recreation of the iOS Weather app interface, complete with dynamic animations representing various weather conditions. Explore the interface to interact with different weather elements and view meteorological data displayed in informational boxes.
+Upon launching the app, you'll be presented with a faithful recreation of the iOS Weather app interface, complete with dynamic animations. Explore the UI to experience different weather conditions and animations.
 
-## Contribution
+## Contributing
 
-Contributions to this project are welcomed! Whether you have suggestions for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
-## Acknowledgments
+## License
 
-Special thanks to Apple for providing inspiration through the design of the iOS Weather app interface.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+Special thanks to Apple for the design inspiration provided by the iOS Weather app.
