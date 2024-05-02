@@ -6,13 +6,15 @@ This project is a front-end codebase created to replicate the iOS Weather app in
 
 The primary goal of this project is to serve as a hands-on learning experience for mastering animation concepts within Xcode and Swift. By recreating the iOS Weather app interface, emphasis was placed on understanding and implementing various animation techniques to achieve visually appealing effects.
 
+
 ## Features
 
-- Recreated iOS Weather app UI screen with animations.
-- Animations implemented using SpriteKit, utilizing SKScene, nodes, and particles.
-- Rain effect designed to simulate raindrops hitting and splashing over informational boxes.
-- Informational boxes displaying weather data.
-- Day and night alternation based on dark mode settings.
+- **Recreated iOS Weather app UI screen with animations.**
+- **Animations implemented using SpriteKit, utilizing SKScene, nodes, and particles.**
+- **Rain effect designed to simulate raindrops hitting and splashing over informational boxes.**
+- **Informational boxes displaying weather data.**
+- **Day and night alternation based on dark mode settings.**
+- **Three interfaces for day mode and three for night mode, accessible via scrollable navigation from the home screen within the tab view's page-style layout.**
 
 ## Technologies Used
 
@@ -35,10 +37,3 @@ Upon launching the app, you'll be presented with a faithful recreation of the iO
 
 Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgements
-
-Special thanks to Apple for the design inspiration provided by the iOS Weather app.
