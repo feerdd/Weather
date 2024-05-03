@@ -18,6 +18,7 @@ The primary goal of this project is to serve as a hands-on learning experience f
 
 ## Technologies Used
 
+- **UIKit**: Incorporated for handling user interface elements and interactions seamlessly alongside SpriteKit for a cohesive user experience.
 - **SpriteKit**: Utilized for creating and managing animations efficiently.
 - **SKScene**: Used to organize and manage the visual elements of the animations.
 - **Nodes and Particles**: Implemented to create various weather effects such as rain, sun, moon, stars, and clouds.
