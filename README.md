@@ -1,6 +1,6 @@
 # iOS Weather App UI Frontend
 
-This project is a front-end codebase created to replicate the iOS Weather app interface, with a focus on learning animation techniques using Xcode (Swift). It includes animations such as rain, sun, moon, stars, and clouds. Additionally, some sunsets feature colors not found in the native app.
+This project is a front-end codebase created to replicate the iOS Weather app interface, with a focus on learning animation techniques using Xcode (Swift). It includes animations such as rain, sun, moon, stars, and clouds. Additionally, some sunsets feature colors not present in the native app.
 
 ## Purpose
 
