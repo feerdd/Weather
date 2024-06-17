@@ -17,19 +17,19 @@ class RainScene: SKScene{
         //adding backgroung
         backgroundColor = .clear
         
-       
+        
         scaleMode = .resizeFill
         
         //need anchor to make the rain appear
         anchorPoint = CGPoint(x: 0.5, y: 1)
         
-    //need an Emitter node cause rain is a particles animation and adding to scene
-    let rainEmitter = SKEmitterNode(fileNamed: "Rain.sks")!
-    addChild(rainEmitter)
+        //need an Emitter node cause rain is a particles animation and adding to scene
+        let rainEmitter = SKEmitterNode(fileNamed: "Rain.sks")!
+        addChild(rainEmitter)
         
         //full width
         rainEmitter.particlePositionRange.dx = UIScreen.main.bounds.width
-    
+        
     }
 }
 
@@ -48,13 +48,13 @@ class RainLandingScene: SKScene{
         //need anchor to make the rain appear
         anchorPoint = CGPoint(x: 0.5, y: 0.6448)
         
-    //need an Emitter node cause rain is a particles animation and adding to scene
-    let rainLandingEmitter = SKEmitterNode(fileNamed: "RainLanding.sks")!
-    addChild(rainLandingEmitter)
+        //need an Emitter node cause rain is a particles animation and adding to scene
+        let rainLandingEmitter = SKEmitterNode(fileNamed: "RainLanding.sks")!
+        addChild(rainLandingEmitter)
         
         //full width - frame to fit the box
         rainLandingEmitter.particlePositionRange.dx = UIScreen.main.bounds.width - 70
-    
+        
     }
 }
 
@@ -73,11 +73,11 @@ class CloudScene: SKScene{
         //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.1, y: 0.91)
         
-    //need an Emitter node cause clouds is a particles animation and adding to scene
-    let cloudsEmitter = SKEmitterNode(fileNamed: "Clouds.sks")!
-    addChild(cloudsEmitter)
+        //need an Emitter node cause clouds is a particles animation and adding to scene
+        let cloudsEmitter = SKEmitterNode(fileNamed: "Clouds.sks")!
+        addChild(cloudsEmitter)
         
-       
+        
     }
 }
 
@@ -96,11 +96,11 @@ class Cloud2Scene: SKScene{
         //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.3, y: 0.91)
         
-    //need an Emitter node cause clouds is a particles animation and adding to scene
-    let cloud2Emitter = SKEmitterNode(fileNamed: "Cloud2.sks")!
-    addChild(cloud2Emitter)
+        //need an Emitter node cause clouds is a particles animation and adding to scene
+        let cloud2Emitter = SKEmitterNode(fileNamed: "Cloud2.sks")!
+        addChild(cloud2Emitter)
         
-       
+        
     }
 }
 
@@ -119,11 +119,11 @@ class Cloud3Scene: SKScene{
         //need anchor to make the clouds appear
         anchorPoint = CGPoint(x: 0.3, y: 0.91)
         
-    //need an Emitter node cause clouds is a particles animation and adding to scene
-    let cloud3Emitter = SKEmitterNode(fileNamed: "Clouds3.sks")!
-    addChild(cloud3Emitter)
+        //need an Emitter node cause clouds is a particles animation and adding to scene
+        let cloud3Emitter = SKEmitterNode(fileNamed: "Clouds3.sks")!
+        addChild(cloud3Emitter)
         
-       
+        
     }
 }
 
@@ -143,12 +143,12 @@ class MoonScene: SKScene{
         //need anchor to make the moon appear
         anchorPoint = CGPoint(x: 0.8, y: 0.87)
         
-    //need an Emitter node cause moon is a particle (just one) animation and adding to scene
-    let moonEmitter = SKEmitterNode(fileNamed: "Moon.sks")!
-    addChild(moonEmitter)
+        //need an Emitter node cause moon is a particle (just one) animation and adding to scene
+        let moonEmitter = SKEmitterNode(fileNamed: "Moon.sks")!
+        addChild(moonEmitter)
         
-   
-    
+        
+        
         
     }
 }
@@ -168,13 +168,13 @@ class StarScene: SKScene{
         //need anchor to make the stars appear
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
         
-    //need an Emitter node cause stars is a particles animation and adding to scene
-    let starEmitter = SKEmitterNode(fileNamed: "Star.sks")!
-    addChild(starEmitter)
+        //need an Emitter node cause stars is a particles animation and adding to scene
+        let starEmitter = SKEmitterNode(fileNamed: "Star.sks")!
+        addChild(starEmitter)
         
         //full height
         starEmitter.particlePositionRange.dx = UIScreen.main.bounds.height
-    
+        
         
     }
 }
@@ -194,11 +194,11 @@ class SunScene: SKScene{
         //need anchor to make the sun appear
         anchorPoint = CGPoint(x: 0.8, y: 0.85)
         
-    //need an Emitter node cause sun is a particles animation (just one) and adding to scene
-    let sunEmitter = SKEmitterNode(fileNamed: "Sun.sks")!
-    addChild(sunEmitter)
-    
-    
+        //need an Emitter node cause sun is a particles animation (just one) and adding to scene
+        let sunEmitter = SKEmitterNode(fileNamed: "Sun.sks")!
+        addChild(sunEmitter)
+        
+        
         
     }
 }

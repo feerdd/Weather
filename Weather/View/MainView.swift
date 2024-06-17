@@ -11,14 +11,14 @@ import UIKit
 
 
 struct MainView: View {
-   
+    
     //adding Environment for add things just in light or dark mode
     @Environment(\.colorScheme) var colorScheme: ColorScheme
-  
+    
     //found a way to change toolbar color, but not for change it according to the view
     /*init(){
-       UIToolbar.appearance().barTintColor = .init(displayP3Red: 1, green: 1, blue: 1, alpha: 0)
-  }*/
+     UIToolbar.appearance().barTintColor = .init(displayP3Red: 1, green: 1, blue: 1, alpha: 0)
+     }*/
     var viewModel =  PlaceViewModel()
     
     var body: some View {
@@ -79,20 +79,20 @@ struct MainView: View {
                                 HourlyView()
                                     .padding(.top)
                                 
-                               
+                                
                             }
                             if (place.weather == "Clear")
                             {
                                 HourlyView2()
-                                        .padding(.top)
+                                    .padding(.top)
                             }
                             
                             if (place.weather == "Cloudy")
                             {
                                 HourlyView3()
-                                        .padding(.top)
+                                    .padding(.top)
                             }
-                           
+                            
                         }
                         .padding(.bottom, 83)
                         
@@ -113,8 +113,8 @@ struct MainView: View {
                                 }
                                 else { SpriteView(scene: SunScene(),
                                                   options: [.allowsTransparency])
-                                       .ignoresSafeArea()
-                                   
+                                .ignoresSafeArea()
+                                    
                                 }
                             }
                         }
@@ -147,25 +147,25 @@ struct MainView: View {
                                                options: [.allowsTransparency])
                                     .ignoresSafeArea()
                                     
-                                   
+                                    
                                 }
                                 else { SpriteView(scene: Cloud3Scene(),
                                                   options: [.allowsTransparency])
-                                       .ignoresSafeArea()
-                                   
+                                .ignoresSafeArea()
+                                    
                                 }
                             }
                             
-                                    
+                            
                             
                         }
                     }.ignoresSafeArea()
-                 
+                    
                 }
                 
                 
             }
-            .tabViewStyle(.page(indexDisplayMode: .never))
+            .tabViewStyle(.page(indexDisplayMode: .always))
             .ignoresSafeArea()
             
             .toolbar{
@@ -187,12 +187,12 @@ struct MainView: View {
                     })
                 }
                 
-               
-               
+                
+                
             }
             
             .toolbarColorScheme(.dark, for: .bottomBar)  .toolbarBackground(.visible , for: .bottomBar)
-                .background(Color.white)
+            .background(Color.white)
             
             
             

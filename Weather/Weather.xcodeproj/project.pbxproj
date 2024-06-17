@@ -29,7 +29,6 @@
 		F6A0E7042B0F2DB200095639 /* ForeCast3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0E7032B0F2DB200095639 /* ForeCast3.swift */; };
 		F6A0E7062B0F2E6600095639 /* HourelyView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A0E7052B0F2E6600095639 /* HourelyView3.swift */; };
 		F6F3A2D62B037E1B00ACB8D3 /* WeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */; };
-		F6F3A2DD2B037E1C00ACB8D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +55,6 @@
 		F6A0E7052B0F2E6600095639 /* HourelyView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourelyView3.swift; sourceTree = "<group>"; };
 		F6F3A2D22B037E1B00ACB8D3 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp.swift; sourceTree = "<group>"; };
-		F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +130,8 @@
 				F6F3A2D42B037E1B00ACB8D3 /* Weather */,
 				F6A0E7082B0F30D600095639 /* View */,
 				F6A0E7072B0F2ED600095639 /* SecondaryView */,
-				F64A116F2B0CC81500E20871 /* ViewModel */,
 				F64A116E2B0CC7FC00E20871 /* Model */,
+				F64A116F2B0CC81500E20871 /* ViewModel */,
 				F6C7DE322B0C1D67001F850F /* Particles */,
 				F6F3A2D32B037E1B00ACB8D3 /* Products */,
 			);
@@ -151,17 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				F6F3A2D52B037E1B00ACB8D3 /* WeatherApp.swift */,
-				F6F3A2DB2B037E1C00ACB8D3 /* Preview Content */,
 			);
 			path = Weather;
-			sourceTree = "<group>";
-		};
-		F6F3A2DB2B037E1C00ACB8D3 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				F6F3A2DC2B037E1C00ACB8D3 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +219,6 @@
 				F667226D2B0E1F2A00854821 /* Cloud2.sks in Resources */,
 				F64AC5AF2B0DE5FD0040A944 /* Sun.sks in Resources */,
 				F60833202B06EB5A002E4F73 /* Assets.xcassets in Resources */,
-				F6F3A2DD2B037E1C00ACB8D3 /* Preview Assets.xcassets in Resources */,
 				F61A855F2B0BE7F3001E5908 /* Moon.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

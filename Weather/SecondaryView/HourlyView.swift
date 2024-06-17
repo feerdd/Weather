@@ -21,7 +21,7 @@ struct HourlyView: View {
                     .shadow(radius: 2)
                     .padding(.horizontal)
                     .accessibilityLabel("Rain conditions expected around 16:00 and 17:00")
-                    
+                
                 
                 Divider()
                     .padding(.bottom, 8)
@@ -43,16 +43,16 @@ struct HourlyView: View {
                                 Image(systemName:cast.image)
                                     .foregroundStyle(.white,.cyan)
                                     .padding(.vertical, 3)
-                                    
+                                
                                 
                                 Text("\(Int(cast.temperature ))°")
                                     .font(.system(size: 20))
                                     .fontWeight(.medium)
                                     .foregroundColor(Color.white)
-                                   .accessibilityLabel("\(Int(cast.temperature))°")
+                                    .accessibilityLabel("\(Int(cast.temperature))°")
                                 
                             }.accessibilityElement(children: .combine)
-                            .padding(.trailing, 14)
+                                .padding(.trailing, 14)
                         }
                     }
                 }
@@ -68,73 +68,73 @@ struct HourlyView: View {
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundColor(Color(red:1,green:1,blue:1,opacity:0.5))
-                                            .multilineTextAlignment(.leading)
-                                            .shadow(radius: 2)
-                                            .accessibilityLabel("10-DAY FORECAST")
-                                            
-                                        
-                                        Divider()
-                                            .padding(.bottom, 8)
-                ForEach(forecast) {cast in
+                        .multilineTextAlignment(.leading)
+                        .shadow(radius: 2)
+                        .accessibilityLabel("10-DAY FORECAST")
                     
                     
-                    HStack(spacing: 15) {
-                        
-                        Text(cast.day)
-                            .font(.title3.bold())
-                            .foregroundStyle(.white)
-                            .frame(width: 60, alignment: .leading)
-                            .accessibilityLabel(cast.day)
+                    Divider()
+                        .padding(.bottom, 8)
+                    ForEach(forecast) {cast in
                         
                         
-                        Image(systemName: cast.image)
-                            .font(.title3)
-                            .symbolVariant(.fill)
-                            .symbolRenderingMode(.palette)
-                            .foregroundStyle(.white,.cyan)
-                            .frame(width: 30)
-                        
-                        Text("\(Int(cast.temperature - 8))°")
-                            .font(.title3.bold())
-                            .foregroundStyle(.secondary)
-                            .foregroundStyle(.white)
-                            .accessibilityLabel("\(Int(cast.temperature - 8))°")
-                         
-                        
-                        
-                        
-                        //Progress Bar...
-                        ZStack(alignment: .leading) {
+                        HStack(spacing: 15) {
                             
-                            Capsule()
-                                .fill(.tertiary)
+                            Text(cast.day)
+                                .font(.title3.bold())
                                 .foregroundStyle(.white)
+                                .frame(width: 60, alignment: .leading)
+                                .accessibilityLabel(cast.day)
                             
-                            GeometryReader {proxy in
+                            
+                            Image(systemName: cast.image)
+                                .font(.title3)
+                                .symbolVariant(.fill)
+                                .symbolRenderingMode(.palette)
+                                .foregroundStyle(.white,.cyan)
+                                .frame(width: 30)
+                            
+                            Text("\(Int(cast.temperature - 8))°")
+                                .font(.title3.bold())
+                                .foregroundStyle(.secondary)
+                                .foregroundStyle(.white)
+                                .accessibilityLabel("\(Int(cast.temperature - 8))°")
+                            
+                            
+                            
+                            
+                            //Progress Bar...
+                            ZStack(alignment: .leading) {
                                 
                                 Capsule()
-                                    .fill(.linearGradient(.init(colors: [.blue, .green]), startPoint: .leading, endPoint: .trailing))
-                                    .frame(width: (cast.temperature) * 2)
+                                    .fill(.tertiary)
+                                    .foregroundStyle(.white)
+                                
+                                GeometryReader {proxy in
+                                    
+                                    Capsule()
+                                        .fill(.linearGradient(.init(colors: [.blue, .green]), startPoint: .leading, endPoint: .trailing))
+                                        .frame(width: (cast.temperature) * 2)
+                                    
+                                }
                                 
                             }
-                            
+                            .frame(height: 4)
+                            Text("\(Int(cast.temperature))°")
+                                .font(.title3.bold())
+                                .foregroundStyle(.white)
                         }
-                        .frame(height: 4)
-                        Text("\(Int(cast.temperature))°")
-                            .font(.title3.bold())
-                            .foregroundStyle(.white)
-                    }
-                    .accessibilityElement(children: .combine)
+                        .accessibilityElement(children: .combine)
                     }
                 }
             }.padding()
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
                 .padding(.horizontal)
-                
+            
         }
     }
 }
-    
-    #Preview {
-        HourlyView()
-    }
+
+#Preview {
+    HourlyView()
+}

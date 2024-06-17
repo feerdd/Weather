@@ -62,7 +62,7 @@ struct HourlyView2: View {
                                     .accessibilityLabel("\(Int(cast.temperature))°")
                                 
                             }.accessibilityElement(children: .combine)
-                            .padding(.trailing, 14)
+                                .padding(.trailing, 14)
                         }
                     }
                 }
@@ -78,16 +78,16 @@ struct HourlyView2: View {
                         .font(.footnote)
                         .fontWeight(.medium)
                         .foregroundColor(Color(red:1,green:1,blue:1,opacity:0.5))
-                                            .multilineTextAlignment(.leading)
-                                            .shadow(radius: 2)
-                                            .accessibilityLabel("10-DAY FORECAST")
-                                            
-                                        
-                                        Divider()
-                                            .padding(.bottom, 8)
-                ForEach(forecast2) {cast in
+                        .multilineTextAlignment(.leading)
+                        .shadow(radius: 2)
+                        .accessibilityLabel("10-DAY FORECAST")
                     
                     
+                    Divider()
+                        .padding(.bottom, 8)
+                    ForEach(forecast2) {cast in
+                        
+                        
                         HStack(spacing: 15) {
                             
                             Text(cast.day)
@@ -115,7 +115,7 @@ struct HourlyView2: View {
                                 .foregroundStyle(.secondary)
                                 .foregroundStyle(.white)
                                 .accessibilityLabel("\(Int(cast.temperature - 8))°")
-                           
+                            
                             
                             //Progress Bar...
                             ZStack(alignment: .leading) {
@@ -134,7 +134,7 @@ struct HourlyView2: View {
                                 
                             }
                             .frame(height: 4)
-                           
+                            
                             Text("\(Int(cast.temperature))°")
                                 .font(.title3.bold())
                                 .foregroundStyle(.white)
@@ -147,7 +147,7 @@ struct HourlyView2: View {
         }
     }
 }
-   
-    #Preview {
-        HourlyView2()
-    }
+
+#Preview {
+    HourlyView2()
+}

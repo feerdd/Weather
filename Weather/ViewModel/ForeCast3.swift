@@ -35,7 +35,7 @@ var forecast3 = [
     DayForecast(day: "Fri", temperature: 13, image: "cloud"),
     DayForecast(day: "Sat", temperature: 12, image: "cloud"),
     DayForecast(day: "Sun", temperature: 10, image: "cloud"),
-
+    
 ]
 var hourly3 = [
     HourForecast(hour: "16:00", temperature: 12, image: "cloud"),
@@ -45,5 +45,5 @@ var hourly3 = [
     HourForecast(hour: "20:00", temperature: 14, image: "cloud"),
     HourForecast(hour: "21:00", temperature: 15, image: "cloud"),
     HourForecast(hour: "22:00", temperature: 15, image: "cloud")
-
+    
 ]
